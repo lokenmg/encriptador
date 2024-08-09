@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --fuente-inter:"Inter", sans-serif;
+    --color-principal: #e5e5e5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-principal);
+    box-sizing: border-box;
+
+}
+
+.main__encriptador{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.encriptador__area{
+    display: grid;
+    padding-left: 10%;
+    gap: 10px;
+    width: 50%;
+}
+
+.logo{
+    margin-left: .2%;
+    margin-top: 1%;
+}
+
+.textarea__texto{
+    background-color: var(--color-principal);
+    border: 0px;
+    font-family: var(--fuente-inter);
+    font-size: 2.5rem;
+    width: 100%;
+    height: 400px;
+    padding: 12px 20px 12px 20px;
+    margin-top: 1.7%;
+    color: #0A3871;
+    text-transform: lowercase;
+
+}
+
+.info{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+        
+}
+
+
+.botones{
+    display: flex;
+    gap: 20px;
+    margin-left: 10%;
+}
+
+.botones__encriptar{
+    background-color: #0A3871;
+    color:#ffff ;
+    width: 40%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+.botones__desencriptar{
+    background-color: #d8dfe8;
+    color:#0A3871 ;
+    border-color: #0A3871;
+    width: 40%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+.card__mensaje{
+    display: grid;
+    padding-right: 10%;
+    background-color: #FFFFFF;
+    height: 600px;
+    width: 29%;
+    padding: 1px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -11px 9px 11px 0px rgba(0, 0, 0, 0.089);
+
+}
+
+.card__mensaje__imagen{
+    margin: auto;
+    
+}
+
+.card__mensaje__noencontrado{
+    font-family: var(--fuente-inter);
+    font-weight: bold;
+    color: #343a40;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.card__mensaje__submensaje{
+    font-family: var(--fuente-inter);
+    color: #495057;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.card__mensaje__encriptado{
+    display: none;
+    font-family: var(--fuente-inter);
+    font-size: 1.7rem;
+    height: 400px;
+    margin: 10px;
+    border: 0px;
+}
+
+.card__mensaje__encriptado__copiar{
+    display: none;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    border: 2px solid #0A3871;
+    border-radius: 20px ;
+    color: #0A3871;
+    font-family: var(--fuente-inter);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1180px){
+    .logo{
+        margin-left: .5%;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+
+    .main__encriptador{
+        flex-direction: column;
+    }
+
+    .encriptador__area{
+        width: 90%;
+        height:900px;
+        padding-left: 1%;
+        margin: .5% .5% .5% 1%;
+
+    }
+
+    .textarea__texto{
+        width: 95%;
+        height: 700px;
+    }
+
+    .botones__desencriptar{
+        height: 80px;
+    }
+
+    .botones__encriptar{
+        height: 80px;
+    }
+
+    .card__mensaje{
+        width: 90%;
+        height: auto;
+        padding-left: 1%;
+        margin: .5% .5% .5% 1%;
+    }
+
+    .card__mensaje__imagen{
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    .card__mensaje__encriptado{
+        height: 250px;
+        font-size: 2.3rem;
+    }
+
+    .card__mensaje__encriptado__copiar{
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .logo{
+        margin-left: .3%;
+        margin-top: 6%;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+
+    .encriptador__area{
+        width: 350px;
+        height:350px;
+        padding-left: 2px;
+        margin-bottom: 75px;
+
+    }
+
+    .textarea__texto{
+        width: 300px;
+        height: 300px;
+        font-size: 1.4rem;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    .info__icon{
+        height: .8rem;
+    }
+
+
+    .botones{
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .botones__desencriptar{
+        margin-left: 20px;
+        width: 300px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .botones__encriptar{
+        margin-left: 20px;
+        width: 300px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .card__mensaje{
+        width: 350px;
+        height: auto;
+        padding-left: 1%;
+        margin: .5% .5% .5% 1%;
+    }
+
+    .card__mensaje__noencontrado{
+        font-size: 1.3rem;
+        margin: 10px 20px 15px 20px ;
+    }
+    
+    .card__mensaje__submensaje{
+        font-size: 1.2rem;
+        margin: 10px 20px 15px 20px ;
+    }
+    
+
+
+    .card__mensaje__encriptado{
+        height: 300px;
+        font-size: 1.2rem;
+    }
+
+    .card__mensaje__encriptado__copiar{
+        height: 50px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/Logo.png" alt="Logo alura">
+
+    <main class="main__encriptador">
+
+        <section class="encriptador__area">
+
+            <div class="div__texto">
+                <textarea name="textarea__texto" id="textarea__texto" class="textarea__texto"
+                    placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="info">
+                <img class="info__icon" src="./assets/bi_exclamation-circle-fill.png" alt="exclamación">
+                <p class="info__informacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <input class="botones__encriptar" type="button" value="Encriptar" onclick="encriptar()">
+
+                <input class="botones__desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+            </div>
+
+        </section>
+
+        <div class="card__mensaje">
+
+            <img class="card__mensaje__imagen" src="./assets/Munieco.png" alt="muñeco con lupa">
+
+            <p class="card__mensaje__noencontrado">Ningún mensaje fue encontrado</p>
+            <p class="card__mensaje__submensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <textarea class="card__mensaje__encriptado" disabled></textarea>
+
+            <input type="button" onclick="copiar()" value="Copiar" class="card__mensaje__encriptado__copiar">
+
+        </div>
+
+    </main>
+
+</body>
+
+<script src="app.js" defer></script>
+
+</html>
